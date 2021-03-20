@@ -8,3 +8,7 @@ node_modules
 cdk.out
 /.idea
 /setAwsProfile.sh
+/notas.txt
+/artillery/artillery.ods
+/.env
+/template.drawio

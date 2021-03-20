@@ -1,0 +1,16 @@
+config:
+  target: "{{ $processEnvironment.API }}"
+  phases:
+    - duration: 1
+      arrivalRate: 60
+      name: Test1
+  processor: "./processor.js"
+scenarios:
+  - name: "SQS"
+    flow:
+      - post:
+          url: "/sqs"
+          json: # This is the message body that will arrive to consumer lambda
+            something: 'irrelevant'
+            unprocessable: true
+          afterResponse: "logResponse"
