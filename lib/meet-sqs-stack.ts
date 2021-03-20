@@ -10,7 +10,7 @@ import { SnsAction } from '@aws-cdk/aws-cloudwatch-actions';
 import * as sns from '@aws-cdk/aws-sns';
 import * as snsSubscriptions from '@aws-cdk/aws-sns-subscriptions';
 
-export class ApigwSqsLambdaStack extends cdk.Stack {
+export class MeetSqsStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 

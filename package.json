@@ -1,8 +1,8 @@
 {
-  "name": "apigw-sqs-lambda",
+  "name": "meet-sqs",
   "version": "0.1.0",
   "bin": {
-    "apigw-sqs-lambda": "bin/apigw-sqs-lambda.js"
+    "meet-sqs": "bin/meet-sqs.js"
   },
   "scripts": {
     "build": "tsc",
